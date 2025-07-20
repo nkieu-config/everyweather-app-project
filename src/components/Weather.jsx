@@ -9,7 +9,10 @@ export default function Weather({ weather, location }) {
   } = weather;
 
   // Fix for country flag emojis
-  const [cityName, flag] = location.split(" ");
+  // Fix: support city names with spaces, extract flag from last word
+  const lastSpaceIndex = location.lastIndexOf(" ");
+  const cityName = location.slice(0, lastSpaceIndex);
+  const flag = location.slice(lastSpaceIndex + 1);
 
   return (
     <div>

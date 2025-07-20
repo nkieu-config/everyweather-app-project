@@ -23,6 +23,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .app {
@@ -30,8 +36,10 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  width: 112rem;
+  max-width: 112rem;
+  width: 100%;
   padding: 6rem 0;
+  margin: 0 auto;
 }
 
 h1 {
@@ -110,14 +118,15 @@ input:focus {
   }
 
   body {
-    padding: 2.8rem;
     align-items: flex-start;
+    width: 100%;
   }
 
   .app {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
+    width: 100%;
     gap: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
   }
 
   h1 {
