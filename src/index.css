@@ -102,3 +102,70 @@ input:focus {
 .error {
   color: #f92222;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding: 2.8rem;
+    align-items: flex-start;
+  }
+
+  .app {
+    padding: 2rem 0;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h2 span {
+    margin-left: 0.2rem;
+    font-size: 3rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 1.4rem 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .weather {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .day {
+    width: 100%;
+    padding: 2rem 3.8rem;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .day span {
+    font-size: 3.8rem;
+  }
+
+  .day p {
+    font-size: 1.6rem;
+  }
+
+  .loader,
+  .error {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
