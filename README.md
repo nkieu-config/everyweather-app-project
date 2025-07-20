@@ -4,13 +4,22 @@ A simple and elegant weather app built with React. Enter any city and instantly 
 
 ### 🌐 Live Demo
 
-👉 [Try the live Application!](everyweather-app-project.vercel.app)
+👉 [Try the live Application!](https://everyweather-app-project.vercel.app/)
 
 ---
 
 ## 📸 Screenshots
 
-<img src="public/screenshot.png" alt="EveryWeather Screenshot" width="100%">
+<table>
+  <tr>
+    <td>
+      <img src="public/screenshot.png" alt="EveryWeather Screenshot" width="100%">
+    </td>
+    <td>
+      <img src="public/screenshot_responsive.png" alt="Responsive Screenshot" width="100%">
+    </td>
+  </tr>
+</table>
 
 ---
 
