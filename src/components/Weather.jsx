@@ -8,9 +8,14 @@ export default function Weather({ weather, location }) {
     weathercode: codes,
   } = weather;
 
+  // Fix for country flag emojis
+  const [cityName, flag] = location.split(" ");
+
   return (
     <div>
-      <h2>{location}</h2>
+      <h2>
+        {cityName} <span>{flag}</span>
+      </h2>
       <ul className="weather">
         {dates.map((date, i) => (
           <Day

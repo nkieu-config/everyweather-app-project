@@ -1,7 +1,11 @@
+import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
 import { useState, useEffect } from "react";
 import Input from "./components/Input";
 import Weather from "./components/Weather";
 import convertToFlag from "./utils/convertToFlag";
+
+// Fix for country flag emojis
+polyfillCountryFlagEmojis();
 
 export default function App() {
   const [location, setLocation] = useState("");
